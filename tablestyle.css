@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.904);
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 106);
+}
+.navbar img{
+    height: 100px;
+    width: 150px;
+}
+.navbar ul{
+    padding: 40px;
+}
+.navbar ul button{
+    border-radius: 20px;
+    padding: 4px;
+    background-color: rgb(253, 0, 84);
+    color: white;
+}
+.outerdiv{
+    display: flex;
+    flex-direction: column;
+    background-color: #1D938C ;
+    padding: 20px;
+}
+.innerdiv1{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap:50px;
+}
+.innerchild1-div select {
+    width: 30%;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #222222;
+    color: white;
+  }
+.innerchild1-div button {
+    background-color:  rgb(253, 0, 84);
+    border-radius: 20px;
+    padding: 10px;
+    width: 20%;
+    color: white;
+    font-weight: bold;
+}
+.innerchild1-div button:hover{
+    background-color: black;
+    opacity: 10rem;
+    transition-duration: 0.8s;
+    border-color:  rgb(253, 0, 84);
+}
+.innerchild2-div input{
+    background-color: #222222;
+    border-radius: 5px;
+    border: 1px solid var(--offWhite);
+    padding: 5px;
+    width: 30%;
+    color: white;
+}
+.innerchild2-div button {
+    background-color:  rgb(253, 0, 84);
+    border-radius: 20px;
+    width: 20%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.innerchild2-div button:hover{
+    background-color: black;
+    opacity: 10rem;
+    transition-duration: 0.8s;
+    border-color:  rgb(253, 0, 84);
+}
+.innerdiv2{
+    display: flex;
+    justify-content: space-between;
+}
+.innerdiv2 input{
+    background-color: #222222;
+    border-radius: 5px;
+    border: 1px solid var(--offWhite);
+    padding: 5px;
+    width: 25%;
+    color: white;
+}
+.innerdiv2 select{
+    width: 30%;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #222222;
+    color: white;
+}
+.innerbuttondiv{
+   margin-left: 43%;
+}
+.innerbuttondiv button{
+    background-color:  rgb(253, 0, 84);
+    border-radius: 20px;
+    width: 20%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.innerbuttondiv button:hover{
+    background-color: black;
+    opacity: 10rem;
+    transition-duration: 0.8s;
+    border-color:  rgb(253, 0, 84);
+}
+.table-div{
+    background-color: black;
+    text-align: center;
+    padding: 20px
+}
+table {
+    width: 200px;
+    color: white;
+    border: 1px solid #1D938C;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+table th{
+    background-color: #1D938C;
+}
+table th, table td {
+    padding: 10px;
+    text-align: center;
+}
+table tr,td{
+    border: 2px solid #1D938C;
+}
+ td :hover{
+    background-image: url(deleteimage.jfif);
+    background-size: 150px;
+}
+.del-image{
+    display: none;
+    width: 20px;
+    height: 30px;
+}
+td p:hover+.del-image{
+    display: inline;
+}
+.del-image:hover{
+    display: inline;
+}
+@media only screen and  (max-width: 767px)
+{
+    .navbar{
+        flex-direction: column;
+    }
+    .outerdiv{
+        flex-direction: column;
+    }
+   .innerdiv1{
+    grid-template-columns: 1fr;
+   }
+   .innerdiv2{
+    flex-direction: column;
+   }
+    
+}
+@media only screen and  (max-width: 991px)
+{
+    .navbar{
+        flex-direction: column;
+    }
+    .outerdiv{
+        flex-direction: column;
+    }
+   .innerdiv1{
+    grid-template-columns: 1fr;
+   }
+   .innerdiv2{
+    flex-direction: column;
+   }
+}

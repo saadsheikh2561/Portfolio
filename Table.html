@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tablestyle.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="Pics/images.jfif" alt="" />
+      <ul>
+        <a href="Portfolio.html">Experience</a>
+      </ul>
+      <ul>
+        <a href="Portfolio.html">Projects</a>
+      </ul>
+      <ul>
+        <a href="Portfolio.html">Education</a>
+      </ul>
+      <ul>
+        <a href="Portfolio.html">Porfolio</a>
+      </ul>
+      <ul>
+        <button>Subscribe</button>
+      </ul>
+    </div>
+    <div class="outerdiv">
+      <div class="innerdiv1">
+        <div class="innerchild1-div">
+          <h1>Add Day</h1>
+          <br />
+          <select id="DaySelection">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+          </select>
+          <button class="adddaybutton">Add</button>
+        </div>
+        <div class="innerchild2-div">
+          <h1>Add Time</h1>
+          <br />
+          <input type="Time" placeholder="0900-1000" id="timeselection" />
+          <button class="addtimebutton">Add</button>
+        </div>
+      </div>
+      <h1>Add Agenda</h1>
+      <br />
+      <div class="innerdiv2">
+        <h3>Time :</h3>
+        <input type="time" id="timeselection2" />
+        <h3>Day :</h3>
+        <select id="DaySelection2">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+        </select>
+        <h3>Agenda :</h3>
+        <input type="text" id="agendatxt" />
+      </div>
+      <br />
+      <div class="innerbuttondiv">
+        <button class="addagendabutton">Add</button>
+      </div>
+    </div>
+    <div class="table-div">
+      <table>
+        <thead>
+          <tr>
+            <th>Schedule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+
+  <script src="JQERY/jquery-3.6.3.js"></script>
+  <script src="script.js"></script>
+</html>
